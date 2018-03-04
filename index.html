@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-  	<header>
+	<title>HTML Academy: Девайс</title>
+</head>
+<body>
+	<header>
   		<div class="header-top">
 	  		<h1>Device</h1>
-	  		<form>
+	  		<form action="" method="get">
 	  			<input type="search" name="search" placeholder="Поиск по сайту">
+	  			<button class="search-btn" type="submit">Найти</button>
 	  		</form>
 
 	  		<ul class="user-login">
 	  			<li><a href="#">Войти</a></li>
 	  		</ul> 
 	  		
-	  		<ul class="compare">
-	  			<li><a href="#">Сравнить</a></li>  					
-	  		</ul>
-
-	  		<ul class="cart">
-	  			<li><a href="#">Корзина</a></li>
-	  		</ul>
-	  		
+	  		<ul class="compare-cart">
+	  			<li><a href="#">Сравнить</a></li>
+	  			<li><a href="#">Корзина</a></li>  					
+	  		</ul>	  		
   		</div>
 
   		<div class="header-menu">
-	  		<nav class="catalog-menu">
-	  			<ul class="sub-menu">
+	  		<nav class="header-main-menu">
+	  			<ul class="main-menu">
 	  				<li><a href="#">Каталог товаров</a>
-	  					<ul class="sub-menu-1">
+	  					<ul class="sub-menu">
 	  						<li><a href="#">Виртуальная реальность</a></li>
 	  						<li><a href="catalog.html">Моноподы для селфи</a></li>
 	  						<li><a href="#">Экшн-камеры</a></li>
-	  					</ul>
-
-	  					<ul class="sub-menu-2">
 	  						<li><a href="#">Фитнес-браслеты</a></li>
 	  						<li><a href="#">Умные часы</a></li>
-	  					</ul>
-
-	  					<ul class="sub-menu-3">
 	  						<li><a href="#">Квадрокоптеры</a></li>
 	  					</ul>
-	  				</li>
-	  			</ul>
-	  		</nav>
-
-	  		<nav class="header-main-menu">
-	  			<ul class="main-menu">
 	  				<li><a href="#">Доставка</a></li>
 	  				<li><a href="#">Гарантия</a></li>
 	  				<li><a href="#">Контакты</a></li>
@@ -58,7 +43,73 @@
   		</div>
   	</header>
   	<main>
-  		<!--js-slider here?-->
+  		<!--js-slider begin-->
+  		<div class="slider">
+  			<div class="slider-item">
+  				<div>
+  					<img src="http://placehold.it/150x100" alt="Самая длинная палка для селфи" width="150" height="100">
+  				</div>
+  				<article>
+  					<h2>Делай селфи, как Бен Стиллер!</h2>
+  					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+  					<a href="#">Подробнее</a>
+  				</article>
+  				<table class="product">
+  					<tr>
+  						<td class="product-properties">8,5 м</td>
+  						<td class="product-properties">5 кг</td>
+  						<td class="product-properties">Карбон</td>
+  					</tr>
+  					<tr>
+  						<td class="product-descriptoin">Длина палки</td>
+  						<td class="product-descriptoin">Вес палки</td>
+  						<td class="product-descriptoin">Материал</td>
+  					</tr>
+  				</table>
+  			</div>
+
+  			<div class="slider-item">
+  				<div>
+  					<img src="http://placehold.it/150x100" alt="Мотивирущие фитнес-браслеты" width="150" height="100">
+  				</div>
+  				<article>
+  					<h2>Худеем правильно!</h2>
+  					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+  					<a href="#">Подробнее</a>
+  				</article>
+  				<table class="product">
+  					<tr>
+  						<td class="product-properties">48 часов</td>
+  					</tr>
+  					<tr>
+  						<td class="product-descriptoin">Без подзарядки</td>
+  					</tr>
+  				</table>
+  			</div>
+
+  			<div class="slider-item">
+  				<div>
+  					<img src="http://placehold.it/150x100" alt="Квадрокоптер с мощным лазером" width="150" height="100">
+  				</div>
+  				<article>
+  					<h2>Порхает как бабочка, жалит как пчела!</h2>
+  					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+  					<a href="#">Подробнее</a>
+  				</article>
+  				<table class="product">
+  					<tr>
+  						<td class="product-properties">800 м</td>
+  						<td class="product-properties">50 м</td>
+  					</tr>
+  					<tr>
+  						<td class="product-descriptoin">Дальность полета</td>
+  						<td class="product-descriptoin">Радиус поражения</td>
+  					</tr>
+  				</table>
+  			</div>
+  		</div>
+
+  		<!--js-slider end-->
 
   		<div class="popular">
   			<ul class="popular-items">
@@ -72,7 +123,7 @@
   		</div>
 
   		<div class="services">
-  			<aside>
+  			<aside class="services-menu">
   				<ul>
   					<li><a href="#">Доставка</a></li>
   					<li><a href="#">Гарантия</a></li>
@@ -82,18 +133,16 @@
 
   			<article>
   				<h2>Доставка</h2>
-  				<p>
-  					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-  				</p>
+  				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
   			</article>
   		</div>
 
   		<div class="logotypes">
   			<ul class="logo-list">
-  				<li class="dji"><img src="http://placehold.it/150x100" alt="dji"></li>
-  				<li class="sp"><img src="http://placehold.it/150x100" alt="sp-gadgets"></li>
-  				<li class="gp"><img src="http://placehold.it/150x100" alt="GoPro"></li>
-  				<li class="vive"><img src="http://placehold.it/150x100" alt="vive"></li>
+  				<li class="dji"><a href="#"><img src="http://placehold.it/150x100" alt="dji"  width="150" height="100"></a></li>
+  				<li class="sp"><a href="#"><img src="http://placehold.it/150x100" alt="sp-gadgets"  width="150" height="100"></a></li>
+  				<li class="gp"><a href="#"><img src="http://placehold.it/150x100" alt="GoPro"  width="150" height="100"></a></li>
+  				<li class="vive"><a href="#"><img src="http://placehold.it/150x100" alt="vive"  width="150" height="100"></a></li>
   			</ul>
   		</div>
 
@@ -113,7 +162,7 @@
   			<section class="contacts">
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  				<img src="http://placehold.it/150x100" alt="улица Строителей, 15">
+  				<img src="http://placehold.it/150x100" alt="г. Москва, улица Строителей, 15"  width="150" height="100">
   				<p><a href="#">Напишите нам</a></p>
   			</section>
   		</div>
@@ -127,15 +176,10 @@
 	  			<li><a href="#">Войти</a></li>
 	  		</ul>
   				
-  			<ul class="footer-compare">
-		  		<li><a href="#">Сравнить</a></li>  					
+  			<ul class="footer-compare-cart">
+		  		<li><a href="#">Сравнить</a></li>  	
+		  		<li><a href="#">Корзина</a></li>				
 		  	</ul>
-
-		  	<ul class="footer-cart">
-		  		<li><a href="#">Корзина</a></li>
-		  	</ul>
-
-	  		
 	  	</div>
 
 	  	<div class="footer-middle">
@@ -150,27 +194,49 @@
 	  		</nav>
 
 	  		
-  			<p>Тел.: +7 (495) 495-95-95</p>
+  			<p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
   		</div>
 
   		<div class="footer-bottom">
-  			<span class="yellow-line"><img src="http://placehold.it/150x100"></span>
+  			<!--потом добавить желтую CSS-линию сюда-->
 
   			<div class="footer-social">
-  				<a class="social-btn social-fb" href="">Facebook</a>
-  				<a class="social-btn social-in" href="">Instagram</a>
-  				<a class="social-btn social-tw" href="">Twitter</a>
+  				<ul>
+  					<li class="social-btn social-fb"><a href="">Facebook</a></li>
+  					<li class="social-btn social-in"><a href="">Instagram</a></li>
+  					<li class="social-btn social-tw"><a href="">Twitter</a></li>
+  				</ul>
   			</div>
 
-  			<span class="htmlacademy-logo"><img src="http://placehold.it/150x100"></span>
+  			<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100"  width="150" height="100"></a></span>
   		</div>
-
 	</footer>
 
 
-	<!--js-write-us -->
+	<!--js-write-us begin-->
+	<div class="feedback">
+		<span class="close-btn">X</span>
+		<form action="" method="post">
+			<label for="fullname">Ваше имя:</label>
+			<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
 
-	<!--js-map-popup -->
+			<label for="email">Ваш e-mail:</label>
+			<input type="email" name="email" id="email" placeholder="email@example.com">
 
-  </body>
+			<label for="message">Текст письма:</label>
+			<textarea name="message" id="message"></textarea>
+
+			<button class="btn" value="send">Отправить</button>
+		</form>		
+	</div>
+	<!--js-write-us end-->
+
+	<!--js-map-popup begin-->
+	<div class="map-popup">
+		<span class="close-btn">X</span>
+		<img src="http://placehold.it/150x100"  width="150" height="100" alt="г. Москва, улица Строителей, 15">
+	</div>
+	<!--js-map-popup end-->
+
+</body>
 </html>
