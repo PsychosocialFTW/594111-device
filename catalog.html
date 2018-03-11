@@ -15,7 +15,7 @@
 				<button class="search-btn" type="submit">Найти</button>
 			</form>
 			<ul class="user-login">
-				<li>Валентин Петухов</li>
+				<li><a href="#">Валентин Петухов</a></li>
 				<li><a href="#">Выйти</a></li>
 			</ul> 			
 			<ul class="compare-cart">
@@ -49,7 +49,7 @@
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог товаров</a></li>
-			<li><a>Моноподы для селфи<a></li>
+			<li><a>Моноподы для селфи</a></li>
 		</ul>		
 
 		<section class="monopods">
@@ -58,7 +58,7 @@
 				<h3>Фильтр:</h3>
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
-						<legend for="price">Стоимость</legend>
+						<legend>Стоимость</legend>
 						<p>от 0 <input type="range" id="price" min="0" max="5000">до 5000</p>
 					</fieldset>
 					<fieldset>
@@ -112,8 +112,8 @@
 					<li class="sorting-item"><a href="#">По популярности</a></li>
 				</ul>
 				<ul class="ascending-descendingly">
-					<li>По возрастанию</li>
-					<li>По убыванию</li>
+					<li><button class="btn" id="js-ascending">По возрастанию</button></li>
+					<li><button class="btn" id="js-descendingly">По убыванию</button></li>
 				</ul>
 				<!--js-sorting end -->
 
@@ -159,8 +159,7 @@
 
 					<li class="catalog-item">						
 						<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
-							
-						</p>
+						
 						<p class="catalog-item-image-hover">
 							<a href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
