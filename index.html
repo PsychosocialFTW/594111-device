@@ -10,9 +10,9 @@
 			<h1 class="header-logo">
 				<a>Device</a>
 			</h1>
-			<form action="" method="get">
+			<form action="https://echo.htmlacademy.ru" method="get">
 				<input type="search" name="search" placeholder="Поиск по сайту">
-				<button class="visually-hidden" type="submit">Найти</button>
+				<button class="search-btn" type="submit">Найти</button>
 			</form>
 			<ul class="user-login">
 				<li><a href="#">Войти</a></li>
@@ -47,61 +47,53 @@
 			<section class="slider-item">
 				<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486">
 				
-				<ul class="slider-item-list">
-					<li>
-						<h2>Делай селфи, как Бен Стиллер!</h2>
-						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="#">Подробнее</a>
-					</li>
-					<li>
-						<table class="product">
-							<tr>
-								<td class="product-properties">8,5 м</td>
-								<td class="product-properties">5 кг</td>
-								<td class="product-properties">Карбон</td>
-							</tr>
-							<tr>
-								<td class="product-descriptoin">Длина палки</td>
-								<td class="product-descriptoin">Вес палки</td>
-								<td class="product-descriptoin">Материал</td>
-							</tr>
-						</table>
-					</li>
-				</ul>
+				<div class="slider-item-description">					
+					<h2>Делай селфи, как Бен Стиллер!</h2>
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a href="#">Подробнее</a>
+				
+					<table class="product">
+						<tr>
+							<td class="product-properties">8,5 м</td>
+							<td class="product-properties">5 кг</td>
+							<td class="product-properties">Карбон</td>
+						</tr>
+						<tr>
+							<td class="product-descriptoin">Длина палки</td>
+							<td class="product-descriptoin">Вес палки</td>
+							<td class="product-descriptoin">Материал</td>
+						</tr>
+					</table>					
+				</div>
 			</section>
 
 			<section class="slider-item">
 				<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485">
 				
-				<ul class="slider-item-list">
-					<li>
-						<h2>Худеем правильно!</h2>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a href="#">Подробнее</a>
-					</li>
-					<li>
-						<table class="product">
-							<tr>
-								<td class="product-properties">48 часов</td>
-							</tr>
-							<tr>
-								<td class="product-descriptoin">Без подзарядки</td>
-							</tr>
-						</table>
-					</li>
-				</ul>
+				<div class="slider-item-description">
+					<h2>Худеем правильно!</h2>
+					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<a href="#">Подробнее</a>
+				
+					<table class="product">
+						<tr>
+							<td class="product-properties">48 часов</td>
+						</tr>
+						<tr>
+							<td class="product-descriptoin">Без подзарядки</td>
+						</tr>
+					</table>
+				</div>
 			</section>
 
 			<section class="slider-item">
 				<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334">
 
-				<ul class="slider-item-list">
-					<li>
+				<div class="slider-item-description">
 						<h2>Порхает как бабочка, жалит как пчела!</h2>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a href="#">Подробнее</a>
-					</li>
-					<li>
+					
 						<table class="product">
 							<tr>
 								<td class="product-properties">800 м</td>
@@ -112,7 +104,7 @@
 								<td class="product-descriptoin">Радиус поражения</td>
 							</tr>
 						</table>
-					</li>
+				</div>
 			</section>
 		</section>
 		<!--js-slider end-->
@@ -134,9 +126,9 @@
 			<h2 class="visually-hidden">Сервисы</h2>	
 
 			<ul class="services-slider-list">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Кредит</a></li>
+				<li><button class="btn" id="js-delivery">Доставка</button></li>
+				<li><button class="btn" id="js-guarantee">Гарантия</button>></li>
+				<li><button class="btn" id="js-credit">Кредит</button>></li>
 			</ul>
 			
 
@@ -188,7 +180,7 @@
 	</main>
 
 	<footer>
-		<section class="footer-top">
+		<div class="footer-top">
 			<h1>Device</h1>
 			
 			<ul class="footer-login">
@@ -199,9 +191,9 @@
 				<li><a href="#">Сравнить</a></li>	
 				<li><a href="#">Корзина</a></li>				
 			</ul>
-		</section>
+		</div>
 
-		<section class="footer-middle">
+		<div class="footer-middle">
 			<p>г. Москва, ул. Строителей, 15</p>
 		
 			<nav class="footer-main-menu">
@@ -214,9 +206,9 @@
 
 			
 			<p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
-		</section>
+		</div>
 
-		<section class="footer-bottom">
+		<div class="footer-bottom">
 			<!--потом добавить желтую CSS-линию сюда-->
 
 			
@@ -227,8 +219,8 @@
 			</ul>
 			
 
-			<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100"width="150" height="100"></a></span>
-		</section>
+			<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML-академия"></a></span>
+		</div>
 	</footer>
 
 

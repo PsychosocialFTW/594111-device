@@ -10,9 +10,9 @@
 			<h1 class="header-logo">
 				<a href="index.html">Device</a>	
 			</h1>			
-			<form action="" method="get">
+			<form action="https://echo.htmlacademy.ru" method="get">
 				<input type="search" name="search" placeholder="Поиск по сайту">
-				<button class="visually-hidden" type="submit">Найти</button>
+				<button class="search-btn" type="submit">Найти</button>
 			</form>
 			<ul class="user-login">
 				<li>Валентин Петухов</li>
@@ -49,21 +49,21 @@
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог товаров</a></li>
-			<li>Моноподы для селфи</li>
+			<li><a>Моноподы для селфи<a></li>
 		</ul>		
 
 		<section class="monopods">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<section>
+			<section class="filters">
 				<h3>Фильтр:</h3>
-
-				<section class="filter">
-					<form action="https://echo.htmlacademy.ru" method="get">
-						<label for="price">Стоимость</label>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend for="price">Стоимость</legend>
 						<p>от 0 <input type="range" id="price" min="0" max="5000">до 5000</p>
-
-						<ul>
-							<li><label>Цвет</label></li>
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>						
+						<ul>							
 							<li>
 								<input class="visually-hidden" type="checkbox" name="black" id="black" checked>
 								<label for="black">Черный</label>
@@ -85,9 +85,10 @@
 								<label for="pink">Розовый</label>
 							</li>
 						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
 						<ul>
-							<li><label>Bluetooth</label></li>
-
 							<li>
 								<input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="yes" checked>
 								<label for="yes">Есть</label>
@@ -97,10 +98,10 @@
 								<label for="no">Нет</label>
 							</li>
 						</ul>
-						<button value="show" class="btn">Показать</button>
-					</form>
-				</section>	
-			</div>
+					</fieldset>
+					<button value="show" class="btn">Показать</button>
+				</form>
+			</section>
 
 			<section class="monopod-item">
 				<h3>Сортировка:</h3>
@@ -109,6 +110,10 @@
 					<li class="sorting-item sorting-item-current"><a href="#">По цене</a></li>
 					<li class="sorting-item"><a href="#">По типу</a></li>
 					<li class="sorting-item"><a href="#">По популярности</a></li>
+				</ul>
+				<ul class="ascending-descendingly">
+					<li>По возрастанию</li>
+					<li>По убыванию</li>
 				</ul>
 				<!--js-sorting end -->
 
@@ -142,7 +147,6 @@
 					<li class="catalog-item">
 						<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
 							
-						</p>
 						<p class="catalog-item-image-hover">
 							<a href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
@@ -180,7 +184,7 @@
 	</main>
 
 	<footer>
-		<section class="footer-top">
+		<div class="footer-top">
 			<h1>
 				<a href="index.htmal">Device</a>
 			</h1>
@@ -194,9 +198,9 @@
 				<li><a href="#">Сравнить</a></li>	
 				<li><a href="#">Корзина</a></li>				
 			</ul>			
-		</section>
+		</div>
 
-		<section class="footer-middle">
+		<div class="footer-middle">
 			<p>г. Москва, ул. Строителей, 15</p>
 		
 			<nav class="footer-main-menu">
@@ -208,9 +212,9 @@
 			</nav>
 			
 			<p><a href="#">Тел.: +7 (495) 495-95-95</a></p>
-		</section>
+		</div>
 
-		<section class="footer-bottom">
+		<div class="footer-bottom">
 		<!--потом добавить желтую CSS-линию сюда-->
 			<ul class="footer-social">
 				<li class="social-btn social-fb"><a href="">Facebook</a></li>
@@ -218,8 +222,8 @@
 				<li class="social-btn social-tw"><a href="">Twitter</a></li>
 			</ul>			
 
-			<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100"></a></span>
-		</section>
+			<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML-академия"></a></span>
+		</div>
 	</footer>
 </body>
 </html>
