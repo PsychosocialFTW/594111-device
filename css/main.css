@@ -1,0 +1,42 @@
+﻿
+@font-face {
+	font-family: 'gilroyextrabold';
+	src:
+		url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+		url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gilroylight';
+	src:
+		url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+		url('../fonts/gilroylight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-logo {
+	font-family: gilroyextrabold;
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: #000;
+}
