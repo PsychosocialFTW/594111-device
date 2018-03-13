@@ -31,12 +31,199 @@ body {
 
 a {
 	text-decoration: none;
+	font-family: gilroyextrabold, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000;
 }
 
-.header-logo {
-	font-family: gilroyextrabold;
+.header-top {
+	background-color: #f7e296;
+}
+
+.header-top a:hover,
+.footer-logo:hover,
+.main-menu a:hover {
+	opacity: 0.6;
+}
+
+.header-top a:active,
+.popular-items a:active,
+.footer-logo:active,
+.main-menu a:active,
+.footer-top > ul a:active {
+	opacity: 0.3;
+}
+
+.header-top-navigation a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: none;
+}
+
+.header-top ul,
+.popular ul,
+.services-slider ul,
+.logotypes ul,
+.bottom ul {
+	list-style: none;
+}
+
+.header-logo a {
+	font-family: gilroyextrabold, Arial, sans-serif;
 	font-size: 48px;
 	line-height: 48px;
 	text-transform: uppercase;
 	color: #000;
+}
+
+.search-btn {
+	border: 2px solid #000;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.search-btn:hover {
+	border: 2px solid #000;
+	background-color: #000;
+	color: #fff;
+}
+
+.search-btn:active {
+	border: 2px solid #000;
+	background-color: #000;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.slider h2 {
+	font-family: gilroyextrabold, Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+	color: #000;
+}
+
+.product-properties {
+	font-family: gilroylight, Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.popular-items a {
+	text-transform: none;
+}
+
+.btn,
+.slider-item-description a,
+.contacts-block a {
+	border: none;
+	font-size: 18px;
+	color: #000;
+	background-color: rgba(0, 0, 0, 0);
+	text-transform: uppercase;
+	font-family: gilroyextrabold, Arial, sans-serif;
+	text-decoration: line-through #f0c52e;
+}
+
+.btn:hover,
+.slider-item-description a:hover,
+.contacts-block a:hover {
+	border: none;
+	font-size: 18px;
+	color: #000;
+	background-color: rgb(240, 197, 46);
+	text-transform: uppercase;
+	font-family: gilroyextrabold, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.btn:active,
+.slider-item-description a:active,
+.contacts-block a:active {
+	border: none;
+	font-size: 18px;
+	color: #f7e184;
+	background-color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-family: gilroyextrabold, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.slider-services {
+	background-color: #e5e5e5;
+}
+
+.services-slider-item h2,
+.contacts-block h2 {
+	font-family: gilroyextrabold, Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000;
+}
+
+.logo-list img {
+	opacity: 0.2;
+	width: 260px;
+	height: 100px;
+}
+
+.dji:hover {
+	background-image: url("../img/logo-1-c.png");
+	background-repeat: no-repeat;
+}
+
+.sp:hover {
+	background-image: url("../img/logo-2-c.png");
+	background-repeat: no-repeat;
+}
+
+.gp:hover {
+	background-image: url("../img/logo-3-c.png");
+	background-repeat: no-repeat;
+}
+
+.vive:hover {
+	background-image: url("../img/logo-4-c.png");
+	background-repeat: no-repeat;
+}
+
+.bottom {
+	background-color: #464646;
+}
+
+.footer-logo {
+	font-family: gilroyextrabold, Arial, sans-serif;
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: #ffc600;
+}
+
+.footer-top > ul a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #fff;
+	font-size: 15px;
+	line-height: 36px;
+	text-transform: none;
+	opacity: 0.7;
+}
+
+.footer-top > ul a:hover {
+	color: #fff;
+}
+
+.footer-middle p,
+.footer-middle p > a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: none;
+}
+
+.footer-navigation a {
+	color: #fff;
 }
