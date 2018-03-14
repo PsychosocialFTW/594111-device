@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="header-top">
 		<section class="header-top-navigation">
 			<h1 class="header-logo">
@@ -47,7 +47,7 @@
 	</header>
 
 	<main>
-		<h1>Моноподы для селфи</h1>
+		<h2>Моноподы для селфи</h2>
 		
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
@@ -56,7 +56,7 @@
 		</ul>		
 
 		<section class="monopods">
-			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<h3 class="visually-hidden">Фильтр товаров</h3>
 			<section class="filters">
 				<h3>Фильтр:</h3>
 				<form action="https://echo.htmlacademy.ru" method="get">
@@ -66,38 +66,38 @@
 					</fieldset>
 					<fieldset>
 						<legend>Цвет</legend>						
-						<ul>							
+						<ul class="filter-item">							
 							<li>
-								<input class="visually-hidden" type="checkbox" name="black" id="black" checked>
+								<input class="visually-hidden filter-input" type="checkbox" name="black" id="black" checked>
 								<label for="black">Черный</label>
 							</li>
 							<li>
-								<input class="visually-hidden" type="checkbox" name="white" id="white">
+								<input class="visually-hidden filter-input" type="checkbox" name="white" id="white">
 								<label for="white">Белый</label>
 							</li>
 							<li>
-								<input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
+								<input class="visually-hidden filter-input" type="checkbox" name="blue" id="blue" checked>
 								<label for="blue">Синий</label>
 							</li>
 							<li>
-								<input class="visually-hidden" type="checkbox" name="red" id="red" checked>
+								<input class="visually-hidden filter-input" type="checkbox" name="red" id="red" checked>
 								<label for="red">Красный</label>
 							</li>
 							<li>
-								<input class="visually-hidden" type="checkbox" name="pink" id="pink">
+								<input class="visually-hidden filter-input" type="checkbox" name="pink" id="pink" disabled>
 								<label for="pink">Розовый</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Bluetooth</legend>
-						<ul>
+						<ul class="filter-item">
 							<li>
-								<input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="yes" checked>
+								<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="yes" id="yes" checked>
 								<label for="yes">Есть</label>
 							</li>
 							<li>
-								<input class="visually-hidden" type="radio" name="bluetooth" value="no" id="no">
+								<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="no" id="no">
 								<label for="no">Нет</label>
 							</li>
 						</ul>
@@ -115,8 +115,8 @@
 					<li class="sorting-item"><a href="#">По популярности</a></li>
 				</ul>
 				<ul class="ascending-descendingly">
-					<li><button class="btn" id="js-ascending">По возрастанию</button></li>
-					<li><button class="btn" id="js-descendingly">По убыванию</button></li>
+					<li><button class="sorting-btn" id="js-ascending">По возрастанию</button></li>
+					<li><button class="sorting-btn" id="js-descendingly">По убыванию</button></li>
 				</ul>
 				<!--js-sorting end -->
 
@@ -124,61 +124,57 @@
 					<li class="catalog-item">
 						<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">							
 						
-						<p class="catalog-item-image-hover">
-							<a href="#">В корзину</a>
+						<p class="catalog-item-hover">
+							<a class="btn" href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
 						</p>
-						<h3>
-							<a href="#">Любительская селфи-палка</a>
-						</h3>
+						<a class="description" href="#">Любительская селфи-палка</a>
+						
 						<b class="catalog-item-price">500 руб.</b>
 					</li>
 
 					<li class="catalog-item">
-						<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="360">
+						<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
 						
-						<p class="catalog-item-image-hover">
-							<a href="#">В корзину</a>
+						<p class="catalog-item-hover">
+							<a class="btn" href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
 						</p>
-						<h3>
-							<a href="">Профессиональная селфи-палка</a>
-						</h3>
+						<a class="description" href="#">Профессиональная селфи-палка</a>
+						
 						<b class="catalog-item-price">1 500 руб.</b>
 					</li>
 
 					<li class="catalog-item">
 						<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
 							
-						<p class="catalog-item-image-hover">
-							<a href="#">В корзину</a>
+						<p class="catalog-item-hover">
+							<a class="btn" href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
 						</p>
-						<h3>
-							<a href="#">Непотопляемая селфи-палка</a>
-						</h3>
+						<a class="description" href="#">Непотопляемая селфи-палка</a>
+						
 						<b class="catalog-item-price">2 500 руб.</b>
 					</li>
 
 					<li class="catalog-item">						
 						<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
 						
-						<p class="catalog-item-image-hover">
-							<a href="#">В корзину</a>
+						<p class="catalog-item-hover">
+							<a class="btn" href="#">В корзину</a>
 							<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
 						</p>
-						<h3>
-							<a href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
-						</h3>
+						<a class="description" href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
+						
 						<b class="catalog-item-price">4 900 руб.</b>						
 					</li>
 				</ul>			
 			
 				<ul class="paginator-list">
 					<li class="paginator-item paginator-item-prev"><a href="#prev">Назад</a></li>
-					<li class="paginator-item paginator-item-current"><a>1</a></li>
-					<li class="paginator-item"><a href="#2">2</a></li>
-					<li class="paginator-item"><a href="#3">3</a></li>
+					<li class="paginator-item paginator-item-page paginator-item-current"><a>1</a></li>
+					<li class="paginator-item paginator-item-page"><a href="#2">2</a></li>
+					<li class="paginator-item paginator-item-page"><a href="#3">3</a></li>
 					<li class="paginator-item paginator-item-next"><a href="#next">Вперёд</a></li>
 				</ul>
 			</section> 			
