@@ -38,13 +38,42 @@ a {
 	color: #000;
 }
 
+input[type="text"],
+input[type="email"],
+textarea {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(70, 70, 70, 0.4);
+	background-color: rgba(242, 242, 242, 0.5);
+	border: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+	color: rgba(70, 70, 70, 0.4);
+	background-color: rgba(234, 234, 234, 0.8);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	color: rgb(70, 70, 70);
+	background-color: #fff;
+	border: 3px solid rgba(240, 197, 46, 0.5);
+}
+
+
 .header-top {
 	background-color: #f7e296;
 }
 
 .header-top a:hover,
 .footer-logo:hover,
-.main-menu a:hover {
+.main-menu a:hover,
+.footer-navigation a:hover {
 	opacity: 0.6;
 }
 
@@ -52,7 +81,9 @@ a {
 .popular-items a:active,
 .footer-logo:active,
 .main-menu a:active,
-.footer-top > ul a:active {
+.footer-login a:active,
+.footer-compare-cart a:active,
+.footer-navigation a:active {
 	opacity: 0.3;
 }
 
@@ -117,20 +148,35 @@ a {
 .btn,
 .slider-item-description a,
 .contacts-block a {
-	border: none;
 	font-size: 18px;
+	line-height: 24px;
+	border: none;
 	color: #000;
 	background-color: rgba(0, 0, 0, 0);
 	text-transform: uppercase;
 	font-family: gilroyextrabold, Arial, sans-serif;
-	text-decoration: line-through #f0c52e;
+	display: inline-block;
+	position: relative;
+}
+
+.btn::before,
+.slider-item-description a::before,
+.contacts-block a::before {
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: #f0c52e;
+	z-index: -1;
 }
 
 .btn:hover,
 .slider-item-description a:hover,
 .contacts-block a:hover {
-	border: none;
 	font-size: 18px;
+	border: none;
 	color: #000;
 	background-color: rgb(240, 197, 46);
 	text-transform: uppercase;
@@ -141,10 +187,19 @@ a {
 .btn:active,
 .slider-item-description a:active,
 .contacts-block a:active {
-	border: none;
 	font-size: 18px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	background-color: rgb(240, 197, 46);
+	text-transform: uppercase;
+	font-family: gilroyextrabold, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.service-btn:active {
+	border: none;
 	color: #f7e184;
-	background-color: rgb(0, 0, 0);
+	background-color: #000;
 	text-transform: uppercase;
 	font-family: gilroyextrabold, Arial, sans-serif;
 	text-decoration: none;
@@ -200,22 +255,23 @@ a {
 	color: #ffc600;
 }
 
-.footer-top > ul a {
+.footer-login a,
+.footer-compare-cart a {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
 	font-size: 15px;
 	line-height: 36px;
 	text-transform: none;
-	opacity: 0.7;
 }
 
-.footer-top > ul a:hover {
-	color: #fff;
+.footer-login a:hover,
+.footer-compare-cart a:hover {
+	color: rgba(255, 255, 255, 1);
 }
 
-.footer-middle p,
-.footer-middle p > a {
+.paragraph,
+.paragraph a {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	color: #fff;
