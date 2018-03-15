@@ -105,8 +105,26 @@ input[type="search"]:focus {
 	flex-direction: column;
 }
 
+.header-top-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.compare-cart li {
+	display: inline;
+}
+
 .header-top-navigation {
 	display: flex;
+}
+
+.header-main-menu > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu > li {
+	display: inline;
 }
 
 .header-top a:hover,
