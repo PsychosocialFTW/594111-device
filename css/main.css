@@ -98,7 +98,15 @@ input[type="search"]:focus {
 }
 
 .header-top {
-	background-color: #f7e296;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom, #fff 11.75%, #f7e296 11.75%, #f7e296 88.25%, #f7e296 88.25%);
+	display: flex;
+	flex-direction: column;
+}
+
+.header-top-navigation {
+	display: flex;
 }
 
 .header-top a:hover,
