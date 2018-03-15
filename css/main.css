@@ -84,6 +84,10 @@ input[type="search"] {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+input[type="search"]::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 input[type="search"]:hover::placeholder {
 	color: rgba(0, 0, 0, 0.6);
 }
@@ -101,8 +105,6 @@ input[type="search"]:focus {
 .footer-logo:hover,
 .main-menu a:hover,
 .footer-navigation a:hover,
-.sorting-item a:hover,
-.sorting-btn:hover,
 .sub-menu a:hover {
 	opacity: 0.6;
 }
@@ -235,6 +237,12 @@ input[type="search"]:focus {
 	text-transform: uppercase;
 	font-family: gilroyextrabold, Arial, sans-serif;
 	text-decoration: none;
+}
+
+.about-list {
+	font-weight: bold;
+	line-height: 40px;
+	font-size: 16px;
 }
 
 .service-btn:active {
@@ -411,7 +419,7 @@ input[type="search"]:focus {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	color: rgba(0, 0, 0, 0.3);
+	color: #000;
 	text-transform: none;
 }
 
@@ -420,13 +428,12 @@ input[type="search"]:focus {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	color: rgba(0, 0, 0, 0.3);
+	color: #000;
 	text-transform: none;
 	border: none;
 	background-color: rgba(0, 0, 0, 0);
 }
 
-.sorting-item a:active,
 .sorting-btn:active,
 .catalog-item-compare:hover {
 	color: #000;
@@ -474,8 +481,7 @@ input[type="search"]:focus {
 	font-family: gilroyextrabold, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: #000;
-	
+	color: #000;	
 }
 
 .paginator-list {
@@ -494,10 +500,14 @@ input[type="search"]:focus {
 	background-color: rgba(217, 217, 217, 0.8);
 }
 
+ .sorting-btn-option,
+.sorting-item-option a,
 .paginator-item-page a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting-btn-option:hover,
+.sorting-item-option a:hover,
 .paginator-item-page a:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
@@ -505,9 +515,11 @@ input[type="search"]:focus {
 .sorting-btn-current,
 .sorting-btn-current:hover,
 .sorting-btn-current:active,
+.sorting-btn-option:active,
 .sorting-item-current a,
 .sorting-item-current a:hover,
 .sorting-item-current a:active,
+.sorting-item-option a:active,
 .paginator-item-current a,
 .paginator-item-current a:hover,
 .paginator-item-current a:active,
