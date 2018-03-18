@@ -61,11 +61,33 @@
 			</div>
 		</div>
 		<section class="monopods">
-			<div class="container">
-				<h3 class="visually-hidden">Фильтр товаров</h3>
-				<div class="monopods-column">
-					<section class="filters">
-							<h3>Фильтр:</h3>
+			<h3 class="visually-hidden">Фильтр товаров</h3>				
+			<section class="monopod-item-filter">
+				<div class="container">
+					<div class="filter-sorting">
+						<h3 class="filter-title">Фильтр:</h3>
+						<div class="monopod-item-sorting">
+							<h3 class="sorting-title">Сортировка:</h3>
+							<!--js-sorting begin-->
+							<ul class="sorting">
+								<li class="sorting-item sorting-item-option sorting-item-current"><a href="#">По цене</a></li>
+								<li class="sorting-item sorting-item-option"><a href="#">По типу</a></li>
+								<li class="sorting-item sorting-item-option"><a href="#">По популярности</a></li>
+							</ul>
+							<ul class="ascending-descendingly">
+								<li><button class="sorting-btn sorting-btn-option visually-hidden" id="js-ascending">По возрастанию</button></li>
+								<li><button class="sorting-btn sorting-btn-option sorting-btn-current visually-hidden" id="js-descendingly">По убыванию</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<!--js-sorting end -->
+			</section>
+
+			<section class="filters-monopod">
+				<div class="container">
+					<div class="filter-column">
+						<section class="filters">
 							<form action="https://echo.htmlacademy.ru" method="get" class="filter-options">
 								<fieldset class="filter-price">
 									<legend>Стоимость</legend>
@@ -111,84 +133,70 @@
 								</fieldset>
 								<button value="show" class="btn">Показать</button>
 							</form>
-					</section>
+						</section>
 
-					<section class="monopod-item">
-						<div class="monopod-item-sorting">
-							<h3>Сортировка:</h3>
-							<!--js-sorting begin-->
-							<ul class="sorting">
-								<li class="sorting-item sorting-item-option sorting-item-current"><a href="#">По цене</a></li>
-								<li class="sorting-item sorting-item-option"><a href="#">По типу</a></li>
-								<li class="sorting-item sorting-item-option"><a href="#">По популярности</a></li>
-							</ul>
-							<ul class="ascending-descendingly">
-								<li><button class="sorting-btn sorting-btn-option" id="js-ascending">По возрастанию</button></li>
-								<li><button class="sorting-btn sorting-btn-option sorting-btn-current" id="js-descendingly">По убыванию</button></li>
-							</ul>
-						</div>
-						<!--js-sorting end -->
-
-						<ul class="catalog-list">
-							<li class="catalog-item">
-								<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">							
-								
-								<p class="catalog-item-hover">
-									<a class="btn" href="#">В корзину</a>
-									<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-								</p>
-								<a class="description" href="#">Любительская селфи-палка</a>
-								
-								<b class="catalog-item-price">500 руб.</b>
-							</li>
-
-							<li class="catalog-item">
-								<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-								
-								<p class="catalog-item-hover">
-									<a class="btn" href="#">В корзину</a>
-									<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-								</p>
-								<a class="description" href="#">Профессиональная селфи-палка</a>
-								
-								<b class="catalog-item-price">1 500 руб.</b>
-							</li>
-
-							<li class="catalog-item">
-								<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+						<section class="monopod-item">
+							<ul class="catalog-list">
+								<li class="catalog-item">
+									<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">							
 									
-								<p class="catalog-item-hover">
-									<a class="btn" href="#">В корзину</a>
-									<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-								</p>
-								<a class="description" href="#">Непотопляемая селфи-палка</a>
-								
-								<b class="catalog-item-price">2 500 руб.</b>
-							</li>
+									<p class="catalog-item-hover">
+										<a class="btn" href="#">В корзину</a>
+										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
+									</p>
+									<a class="description" href="#">Любительская селфи-палка</a>
+									
+									<b class="catalog-item-price">500 руб.</b>
+								</li>
 
-							<li class="catalog-item">						
-								<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
-								
-								<p class="catalog-item-hover">
-									<a class="btn" href="#">В корзину</a>
-									<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-								</p>
-								<a class="description" href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
-								
-								<b class="catalog-item-price">4 900 руб.</b>						
-							</li>
-						</ul>			
-					
-						<ul class="paginator-list">
-							<li class="paginator-item paginator-item-prev"><a href="#prev">Назад</a></li>
-							<li class="paginator-item paginator-item-page paginator-item-current"><a>1</a></li>
-							<li class="paginator-item paginator-item-page"><a href="#2">2</a></li>
-							<li class="paginator-item paginator-item-page"><a href="#3">3</a></li>
-							<li class="paginator-item paginator-item-next"><a href="#next">Вперёд</a></li>
-						</ul>
-					</section> 	
-				</div>
-			</div>			
+								<li class="catalog-item">
+									<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+									
+									<p class="catalog-item-hover">
+										<a class="btn" href="#">В корзину</a>
+										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
+									</p>
+									<a class="description" href="#">Профессиональная селфи-палка</a>
+									
+									<b class="catalog-item-price">1 500 руб.</b>
+								</li>
+
+								<li class="catalog-item">
+									<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+										
+									<p class="catalog-item-hover">
+										<a class="btn" href="#">В корзину</a>
+										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
+									</p>
+									<a class="description" href="#">Непотопляемая селфи-палка</a>
+									
+									<b class="catalog-item-price">2 500 руб.</b>
+								</li>
+
+								<li class="catalog-item">						
+									<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
+									
+									<p class="catalog-item-hover">
+										<a class="btn" href="#">В корзину</a>
+										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
+									</p>
+									<a class="description" href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
+									
+									<b class="catalog-item-price">4 900 руб.</b>						
+								</li>
+							</ul>			
+						
+							<ul class="paginator-list">
+								<li class="paginator-item paginator-item-prev"><a href="#prev">Назад</a></li>
+								<li class="paginator-item paginator-item-page paginator-item-current"><a>1</a></li>
+								<li class="paginator-item paginator-item-page"><a href="#2">2</a></li>
+								<li class="paginator-item paginator-item-page"><a href="#3">3</a></li>
+								<li class="paginator-item paginator-item-next"><a href="#next">Вперёд</a></li>
+							</ul>
+						</section>	
+					</div>
+				</div>	
+			</section>
 		</section>	
 	</main>
 
@@ -221,8 +229,6 @@
 
 			<div class="footer-bottom">
 			<!--потом добавить желтую CSS-линию сюда-->
-				<div class="yellow-line"></div>
-
 				<ul class="footer-social">
 					<li class="social-btn social-fb"><a href="">Facebook</a></li>
 					<li class="social-btn social-in"><a href="">Instagram</a></li>
