@@ -19,7 +19,7 @@
 						<input type="search" name="search" placeholder="Поиск по сайту">
 						<button class="search-btn" type="submit">Найти</button>
 					</form>
-					<ul class="header-login-compare login-inner">
+					<ul class="header-login-inner">
 						<li><a href="#">Валентин Петухов</a></li>
 						<li><a href="#">Выйти</a></li>
 						<li><a href="#">Сравнить</a></li>
@@ -65,7 +65,9 @@
 			<section class="monopod-item-filter">
 				<div class="container">
 					<div class="filter-sorting">
-						<h3 class="filter-title">Фильтр:</h3>
+						<div class="filter-title">
+							<h3>Фильтр:</h3>
+						</div>
 						<div class="monopod-item-sorting">
 							<h3 class="sorting-title">Сортировка:</h3>
 							<!--js-sorting begin-->
@@ -187,17 +189,15 @@
 							</ul>			
 						
 							<ul class="paginator-list">
-								<ul class="paginator-list-prev">
-									<li class="paginator-item paginator-item-prev"><a href="#prev">Назад</a></li>
-								</ul>
+								<a href="#prev" class="paginator-item paginator-item-prev">Назад</a>
+								
 								<ul class="paginator-list-page">
 									<li class="paginator-item paginator-item-page paginator-item-current"><a>1</a></li>
 									<li class="paginator-item paginator-item-page"><a href="#2">2</a></li>
 									<li class="paginator-item paginator-item-page"><a href="#3">3</a></li>
 								</ul>
-								<ul class="paginator-list-next">
-									<li class="paginator-item paginator-item-next"><a href="#next">Вперёд</a></li>
-								</ul>
+								
+								<a href="#next" class="paginator-item paginator-item-next">Вперёд</a>								
 							</ul>
 						</section>	
 					</div>
@@ -245,5 +245,3 @@
 			</div>
 		</div>
 	</footer>
-</body>
-</html>
