@@ -541,6 +541,7 @@ a {
 
 .feedback-input {
 	flex-basis: 320px;
+	padding-top: 95px;
 }
 
 .feedback-input:first-child {
