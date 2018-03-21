@@ -150,7 +150,7 @@ a {
 .header-logo {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 24px;	
+	padding-bottom: 18px;	
 	padding-top: 26px;
 }
 
@@ -337,11 +337,12 @@ a {
 	font-size: 15px;
 	line-height: 30px;
 	text-transform: none;
+	letter-spacing: 0;
 }
 
 .footer-navigation a {
 	color: #fff;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 }
 
 .map-popup {
@@ -569,15 +570,17 @@ a {
 
 .header-top-navigation {
 	margin: 0;
-	margin-bottom: 47px;
+	margin-bottom: 35px;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-basis: 100%;
 }
 
 .search-form {
-	flex-basis: 52%;
+	flex-basis: 26%;
+	padding-left: 40px;
 }
 
 .header-login-compare,
@@ -589,8 +592,18 @@ a {
 }
 
 .header-login-compare li:first-child {
-	flex-basis: 52%;
+	flex-basis: 50%;
 	padding-left: 27px;
+}
+
+.header-login-compare li:nth-child(2) {
+	flex-basis: 18%;
+	padding-left: 27px;
+	margin: 0 5px;
+}
+
+.header-login-compare li:last-child {
+	padding-left: 41px;
 }
 
 .header-main-menu ul {
@@ -599,7 +612,7 @@ a {
 }
 
 .main-menu {
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 }
 
 .main-menu ul {
@@ -615,16 +628,24 @@ a {
 	flex-basis: 100%;
 }
 
-.main-menu li:first-child {
-	flex-basis: 52%;
+.main-menu > li:first-child {
+	flex-basis: 300px;
+
 }
 
-.main-menu li:nth-child(2) {
-	flex-basis: 12%;
+.main-menu > li:nth-child(2) {
+	flex-basis: 160px;
+	margin-left: 250px;
 }
 
-.main-menu li:nth-child(3) {
-	flex-basis: 24%;
+.main-menu > li:nth-child(3) {
+	flex-basis: 120px;
+}
+
+.main-menu > li:last-child {
+	background-color: yellow;
+	flex-basis: 120px;
+	margin-left: 100px;
 }
 
 .container .slider-item {
@@ -710,12 +731,27 @@ a {
 .footer-top {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	padding: 2px 0 9px;
+}
+
+.footer-top ul {
+	margin: 0;
+	padding: 0;
+
 }
 
 .footer-login-compare li {
 	display: inline;
-	padding-left: 30px;
+	padding-left: 60px;
+}
+
+.footer-login-compare {
+	letter-spacing: 0px;
+}
+
+.footer-main-menu ul {
+	margin: 0;
+	padding: 0;
 }
 
 .footer-middle {
@@ -724,9 +760,13 @@ a {
 	align-items: center;
 }
 
+.footer-navigation {
+	display: flex;
+}
+
 .footer-navigation li {
-	display: inline;
-	padding-right: 37px;
+	padding-right: 30px;
+	padding-top: 3px;
 }
 
 .footer-bottom {
