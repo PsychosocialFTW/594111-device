@@ -80,6 +80,8 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 	border: 2px solid transparent;
 	background-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	padding-left: 35px;
 }
 
 .search-form input::placeholder {
@@ -278,6 +280,11 @@ a {
 	font-size: 47px;
 	line-height: 48px;
 	color: #000;
+	margin-bottom: 30px;
+}
+
+.services-slider-item p {
+	letter-spacing: 0;
 }
 
 .logo-list img {
@@ -631,7 +638,7 @@ a {
 
 .search-form {
 	flex-basis: 26%;
-	padding-left: 40px;
+	outline: 2px solid red;
 }
 
 .header-login-compare,
@@ -662,16 +669,19 @@ a {
 .header-login-compare li:first-child {
 	flex-basis: 50%;
 	padding-left: 27px;
+	position: relative;
 }
 
 .header-login-compare li:nth-child(2) {
 	flex-basis: 18%;
 	padding-left: 27px;
 	margin: 0 5px;
+	position: relative;
 }
 
 .header-login-compare li:last-child {
-	padding-left: 41px;
+	padding-left: 41px;	
+	position: relative;
 }
 
 .header-main-menu ul {
@@ -779,6 +789,8 @@ a {
 .slider-item-services {
 	flex-basis: 460px;
 	margin-left: 120px;
+	box-sizing: border-box;
+	padding-right: 35px;
 }
 
 .container {
@@ -801,15 +813,18 @@ a {
 .contacts-block {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 100px;
 	padding-bottom: 93px;
 }
 
 .about-us {
 	width: 460px;
+	position: relative;
 }
 
 .contacts {
 	width: 560px;
+	position: relative;
 }
 
 .footer-top {
@@ -831,14 +846,23 @@ a {
 
 .footer-login-main li:first-child {
 	margin-right: 65px;
+	position: relative;
+
+	outline: 2px solid red;
 }
 
 .footer-login-main li:nth-child(2) {
 	margin-right: 65px;
+	position: relative;
+	
+	outline: 2px solid yellow;
 }
 
 .footer-login-main li:last-child {
 	margin-right: 0;
+	position: relative;
+	
+	outline: 2px solid green;
 }
 
 .footer-inner li:first-child {
@@ -867,6 +891,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 45px;
 }
 
 .footer-navigation {
@@ -1075,4 +1100,273 @@ a {
 	height: 1px;
 	margin: -1px;
 	padding: 0;	
+}
+
+
+/*Декоративные элементы*/
+
+/*Иконка поиска*/
+
+.search-icon {
+	background-image: url("../img/search.svg");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+
+/*Иконка перед кнопкой "Войти"*/
+
+.header-login-compare li:first-child::before {
+	content: "";
+	width: 13px;
+	height: 12px;
+	position: absolute;
+	top: 9px;
+	left: 1px;
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header-login-compare li:first-child:hover::before {
+	opacity: 0.6;
+}
+
+.header-login-compare li:first-child:active::before {
+	opacity: 0.3;
+}
+
+/*Иконка перед кнопкой "Сравнить"*/
+
+.header-login-compare li:nth-child(2)::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 10px;
+	left: 7px;
+	background-image: url("../img/compare.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header-login-compare li:nth-child(2):hover::before {
+	opacity: 0.5;
+}
+
+.header-login-compare li:nth-child(2):active::before {
+	opacity: 0.3;
+}
+
+/*Иконка перед кнопкой "Корзина*/
+
+.header-login-compare li:last-child::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 9px;
+	left: 17px;
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header-login-compare li:last-child:hover::before {
+	opacity: 0.8;
+}
+
+.header-login-compare li:last-child:active::before {
+	opacity: 0.3;
+}
+
+/*Иконки для блока "Популярные товары"*/
+
+.vr {
+	background-image: url("../img/popular-1.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.selfie {
+	background-image: url("../img/popular-2.svg");
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.cameras {
+	background-image: url("../img/popular-3.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bracelets {
+	background-image: url("../img/popular-4.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.clock {
+	background-image: url("../img/popular-5.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.quadrupters {
+	background-image: url("../img/popular-6.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.vr:active,
+.selfie:active,
+.cameras:active,
+.bracelets:active,
+.clock:active,
+.quadrupters:active {
+	opacity: 0.3;
+}
+
+/*Иконки после слайдов в разделе "Сервисы"*/
+
+.services-slider-item {
+	position: relative;
+}
+
+.services-slider-item:first-child::after {
+	content: "";
+	width: 137px;
+	height: 164px;
+	position: absolute;
+	top: 10px;
+	left: 559px;
+	background-image: url("../img/delivery.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.services-slider-item:nth-child(2)::after {
+	content: "";
+	width: 172px;
+	height: 196px;
+	position: absolute;
+	top: -14px;
+	left: 543px;
+	background-image: url("../img/warranty.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.services-slider-item:last-child::after {
+	content: "";
+	width: 156px;
+	height: 188px;
+	position: absolute;
+	top: -13px;
+	left: 535px;
+	background-image: url("../img/credit.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Горизонтальные линии перед блоком "О нас" и "Контакты"*/
+
+.about-us::before {
+	content: "";
+	width: 80px;
+	height: 7px;
+	top: -10px;
+	position: absolute;
+	background-color: black;
+}
+
+.contacts::before {
+	content: "";
+	width: 80px;
+	height: 7px;
+	top: -10px;
+	position: absolute;
+	background-color: black;
+}
+
+/*Иконка перед кнопкой "Войти" в футере*/
+
+.footer-login-main li:first-child::before {
+	content: "";
+	width: 13px;
+	height: 12px;
+	position: absolute;
+	top: 9px;
+	left: 1px;
+	background-image: url("../img/user-footer.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-login-main li:first-child:hover::before {
+	opacity: 0.6;
+}
+
+.footer-login-main li:first-child:active::before {
+	opacity: 0.3;
+}
+
+/*Иконка перед кнопкой "Сравнить" в футере*/
+
+.footer-login-main li:nth-child(2)::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 10px;
+	left: 7px;
+	background-image: url("../img/compare.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-login-main li:nth-child(2):hover::before {
+	opacity: 0.5;
+}
+
+.footer-login-main li:nth-child(2):active::before {
+	opacity: 0.3;
+}
+
+/*Иконка перед кнопкой "Корзина" в футере*/
+
+.footer-login-main li:last-child::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 9px;
+	left: 17px;
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-login-main li:last-child:hover::before {
+	opacity: 0.8;
+}
+
+.footer-login-main li:last-child:active::before {
+	opacity: 0.3;
+}
+
+/*Логотип HTML академии*/
+.htmlacademy-logo {
+	position: relative;
+}
+
+.htmlacademy-logo::before {
+	content: "";
+	width: 27px;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("../img/logo-html.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
