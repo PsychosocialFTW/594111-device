@@ -16,7 +16,7 @@
 			<section class="header-top-navigation">		
 				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
 					<input type="search" name="search" placeholder="Поиск по сайту" class="search-icon">
-					<button class="search-btn visually-hidden1" type="submit">Найти</button>
+					<button class="search-btn" type="submit">Найти</button>
 				</form>
 				<ul class="header-login-compare">
 					<li><a href="#">Войти</a></li>
@@ -48,14 +48,32 @@
 		<div class="container">
 			<section class="slider">
 				<h2 class="visually-hidden">Девайсы</h2>
-				<section class="slider-item">
+				<section class="slider-item slide1">
 					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long_stick">
-					
+
 					<div class="slider-item-description">					
-						<h2>Делай селфи, как Бен Стиллер!</h2>
+						<h2>Делай селфи,<br> как Бен Стиллер!</h2>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="#">Подробнее</a>
-					
+						<div class="slider-elements">
+							<a href="#">Подробнее</a>
+							
+							<div class="slider-radio">
+								<ul class="slider-switch">
+									<li>
+										<label for="slide1"></label>
+										<input type="radio" name="slide1" id="slide1" checked>
+									</li>
+									<li>
+										<label for="slide2"></label>
+										<input type="radio" name="slide2" id="slide2">
+									</li>
+									<li>
+										<label for="slide3"></label>
+										<input type="radio" name="slide3" id="slide3">
+									</li>
+								</ul>
+							</div>
+						</div>
 						<table class="product">
 							<tr>
 								<td class="product-properties">8,5 м</td>
@@ -71,7 +89,7 @@
 					</div>
 				</section>
 
-				<section class="slider-item">
+				<section class="slider-item slide2">
 					<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="fitness-bracelet">
 					
 					<div class="slider-item-description">
@@ -90,7 +108,7 @@
 					</div>
 				</section>
 
-				<section class="slider-item">
+				<section class="slider-item slide3">
 					<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334" class="quadrupter">
 
 					<div class="slider-item-description">
@@ -128,7 +146,7 @@
 					<li class="popular-item">
 							<a href="catalog.html">
 								<div class="popular-img selfie"></div>
-								<p>Моноподы для селфи</p>
+								<p>Моноподы <br> для селфи</p>
 							</a>
 					</li>
 					<li class="popular-item">
@@ -166,23 +184,23 @@
 				<div class="slider-middle">
 					<div class="slider-services">
 						<ul class="services-slider-list">
-							<li><button class="btn service-btn" id="js-delivery">Доставка</button></li>
+							<li><button class="btn service-btn active" id="js-delivery">Доставка</button></li>
 							<li><button class="btn service-btn" id="js-guarantee">Гарантия</button></li>
 							<li><button class="btn service-btn" id="js-credit">Кредит</button></li>
 						</ul>			
 					</div>		
 					<div class="slider-item-services">
-						<section class="services-slider-item">
+						<section class="services-slider-item delivery-slide">
 							<h2>Доставка</h2>
 							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 						</section>
 
-						<section class="services-slider-item">
+						<section class="services-slider-item guarantee-slide">
 							<h2>Гарантия</h2>
 							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
 						</section>
 
-						<section class="services-slider-item">
+						<section class="services-slider-item credit-slide">
 							<h2>Кредит</h2>
 							<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 						</section>
@@ -211,7 +229,7 @@
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul class="about-list">
-						<li>Деловые линии</li>
+						<li>Деловые Линии</li>
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
@@ -255,17 +273,19 @@
 				<p class="paragraph"><a href="#">Тел.: +7 (495) 495-95-95</a></p>
 			</div>
 
-			<div class="footer-bottom">
-				<!--потом добавить желтую CSS-линию сюда-->
+			<div class="footer-bottom-container">
+				<div class="footer-bottom">
+					<!--потом добавить желтую CSS-линию сюда-->
 
-				<ul class="footer-social">
-					<li class="social-btn social-fb"><a href="">Facebook</a></li>
-					<li class="social-btn social-in"><a href="">Instagram</a></li>
-					<li class="social-btn social-tw"><a href="">Twitter</a></li>
-				</ul>
-				
-
-				<a href="https://htmlacademy.ru/" target="_blank"><span class="htmlacademy-logo"></span></a>
+					<ul class="footer-social">
+						<li class="social-btn"><a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a></li>
+						<li class="social-btn"><a href="#" class="social-in"><span class="visually-hidden">Instagram</span></a></li>
+						<li class="social-btn"><a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a></li>
+					</ul>
+					
+					
+					<a href="https://htmlacademy.ru/" target="_blank" class="htmlacademy-logo"><span></span></a>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -289,14 +309,14 @@
 
 			<button class="btn feedback-btn" value="send">Отправить</button>
 		</form>	
-		<button class="close-btn">Закрыть</button>	
+		<button class="feedback-close-btn"><span class="visually-hidden">Закрыть</span></button>	
 	</div>
 	<!--js-write-us end-->
 	<br>
 	<!--js-map-popup begin-->
 	<div class="map-popup">
 		<img src="img/map-big.jpg" width="994" height="559" alt="г. Москва, улица Строителей, 15">
-		<button class="close-btn">Закрыть</button>
+		<button class="map-close-btn"><span class="visually-hidden">Закрыть</span></button>
 	</div>
 	<!--js-map-popup end-->
 </body>

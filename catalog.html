@@ -11,13 +11,13 @@
 	<div class="container">
 		<div class="inner-header">
 			<header class="header-top">
-				<h1 class="header-logo">
+				<h1 class="inner-logo">
 					<a href="index.html">Device</a>	
 				</h1>
 				<section class="header-top-navigation">			
 					<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
-						<input type="search" name="search" placeholder="Поиск по сайту">
-						<button class="search-btn visually-hidden" type="submit">Найти</button>
+						<input type="search" name="search" placeholder="Поиск по сайту" class="search-icon">
+						<button class="search-btn" type="submit">Найти</button>
 					</form>
 					<ul class="header-login-inner">
 						<li><a href="#">Валентин Петухов</a></li>
@@ -27,7 +27,7 @@
 					</ul>			
 				</section>
 
-				<nav class="header-main-menu">
+				<nav class="inner-menu">
 					<ul class="main-menu">
 						<li><a href="#">Каталог товаров</a>
 							<ul class="sub-menu">
@@ -77,8 +77,8 @@
 								<li class="sorting-item sorting-item-option"><a href="#">По популярности</a></li>
 							</ul>
 							<ul class="ascending-descendingly">
-								<li><button class="sorting-btn sorting-btn-option visually-hidden" id="js-ascending">По возрастанию</button></li>
-								<li><button class="sorting-btn sorting-btn-option sorting-btn-current visually-hidden" id="js-descendingly">По убыванию</button></li>
+								<li><button class="sorting-btn sorting-btn-option up-sort" id="js-ascending"><span class="visually-hidden">По возрастанию</span></button></li>
+								<li><button class="sorting-btn sorting-btn-option sorting-btn-current down-sort" id="js-descendingly"><span class="visually-hidden">По убыванию</span></button></li>
 							</ul>
 						</div>
 					</div>
@@ -99,24 +99,47 @@
 									<legend>Цвет</legend>						
 									<ul class="filter-item">							
 										<li>
-											<input class="visually-hidden filter-input" type="checkbox" name="black" id="black" checked>
-											<label for="black">Черный</label>
+											<label for="black" class="filter-checkbox">
+												<input class="visually-hidden filter-input" type="checkbox" name="black" id="black" checked>
+												<span class="checkbox-indicator"></span>
+												<span class="color-disabled">
+													Черный
+												</span>
+											</label>
 										</li>
 										<li>
-											<input class="visually-hidden filter-input" type="checkbox" name="white" id="white">
-											<label for="white">Белый</label>
+											<label for="white" class="filter-checkbox">
+												<input class="visually-hidden filter-input" type="checkbox" name="white" id="white">
+												<span class="checkbox-indicator"></span>
+												<span class="color-disabled">
+													Белый
+												</span>
+											</label>
 										</li>
 										<li>
-											<input class="visually-hidden filter-input" type="checkbox" name="blue" id="blue" checked>
-											<label for="blue">Синий</label>
+											<label for="blue" class="filter-checkbox">
+												<input class="visually-hidden filter-input" type="checkbox" name="blue" id="blue" checked>
+												<span class="checkbox-indicator"></span>
+												<span class="color-disabled">
+													Синий
+												</span>
+											</label>
 										</li>
 										<li>
-											<input class="visually-hidden filter-input" type="checkbox" name="red" id="red" checked>
-											<label for="red">Красный</label>
+											<label for="red" class="filter-checkbox">
+												<input class="visually-hidden filter-input" type="checkbox" name="red" id="red" checked disabled>
+												<span class="checkbox-indicator"></span>
+												<span class="color-disabled">
+													Красный
+												</span>
+											</label>
 										</li>
 										<li>
-											<input class="visually-hidden filter-input" type="checkbox" name="pink" id="pink" disabled>
-											<label for="pink">Розовый</label>
+											<label for="pink" class="filter-checkbox">
+												<input class="visually-hidden filter-input" type="checkbox" name="pink" id="pink" disabled>
+												<span class="checkbox-indicator"></span>
+												<span class="color-disabled">Розовый</span>
+											</label>
 										</li>
 									</ul>
 								</fieldset>
@@ -124,16 +147,26 @@
 									<legend>Bluetooth</legend>
 									<ul class="filter-item">
 										<li>
-											<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="yes" id="yes" checked>
-											<label for="yes">Есть</label>
+											<label for="yes" class="filter-radio">
+												<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="yes" id="yes" checked>
+												<span class="radio-indicator"></span>
+												<span class="bluetooth-disabled">
+													Есть
+												</span>
+											</label>
 										</li>
 										<li>
-											<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="no" id="no">
-											<label for="no">Нет</label>
+											<label for="no" class="filter-radio">
+												<input class="visually-hidden filter-input" type="radio" name="bluetooth" value="no" id="no" disabled>
+												<span class="radio-indicator"></span>
+												<span class="bluetooth-disabled">
+													Нет
+												</span>
+											</label>
 										</li>
 									</ul>
 								</fieldset>
-								<button value="show" class="btn">Показать</button>
+								<button value="show" class="btn filter-btn">Показать</button>
 							</form>
 						</section>
 
@@ -141,50 +174,65 @@
 							<ul class="catalog-list">
 								<li class="catalog-item">
 									<img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">							
-									
-									<p class="catalog-item-hover">
-										<a class="btn" href="#">В корзину</a>
-										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-									</p>
-									<a class="description" href="#">Любительская селфи-палка</a>
-									
-									<b class="catalog-item-price">500 руб.</b>
+									<div class="hover-btn">
+										<p class="catalog-item-hover">
+											<a class="btn" href="#">В корзину</a>
+											<a class="catalog-item-compare" href="#">Добавить к сравнению</a>
+										</p>
+									</div>
+									<div class="card-price">
+										<a class="description" href="#">Любительская селфи-палка</a>
+										
+										<b class="catalog-item-price">500 руб.</b>
+									</div>
 								</li>
 
 								<li class="catalog-item">
 									<img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
 									
-									<p class="catalog-item-hover">
-										<a class="btn" href="#">В корзину</a>
-										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-									</p>
-									<a class="description" href="#">Профессиональная селфи-палка</a>
-									
-									<b class="catalog-item-price">1 500 руб.</b>
+									<div class="hover-btn">
+										<p class="catalog-item-hover">
+											<a class="btn" href="#">В корзину</a>
+											<a class="catalog-item-compare" href="#">Добавить к сравнению</a>
+										</p>
+									</div>
+									<div class="card-price">
+										<a class="description" href="#">Профессиональная<br> селфи-палка</a>
+										
+										<b class="catalog-item-price">1 500 руб.</b>
+									</div>
 								</li>
 
 								<li class="catalog-item">
 									<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-										
-									<p class="catalog-item-hover">
-										<a class="btn" href="#">В корзину</a>
-										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-									</p>
-									<a class="description" href="#">Непотопляемая селфи-палка</a>
 									
-									<b class="catalog-item-price">2 500 руб.</b>
+									<div class="hover-btn">	
+										<p class="catalog-item-hover">
+											<a class="btn" href="#">В корзину</a>
+											<a class="catalog-item-compare" href="#">Добавить к сравнению</a>
+										</p>
+									</div>
+									<div class="card-price">
+										<a class="description" href="#">Непотопляемая селфи-палка</a>
+									
+										<b class="catalog-item-price">2 500 руб.</b>
+									</div>
 								</li>
 
 								<li class="catalog-item">						
 									<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
 									
-									<p class="catalog-item-hover">
-										<a class="btn" href="#">В корзину</a>
-										<a class="catalog-item-compare" href="#">Добваить к сравнению</a>
-									</p>
-									<a class="description" href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
-									
-									<b class="catalog-item-price">4 900 руб.</b>						
+									<div class="hover-btn">
+										<p class="catalog-item-hover">
+											<a class="btn" href="#">В корзину</a>
+											<a class="catalog-item-compare" href="#">Добавить к сравнению</a>
+										</p>
+									</div>
+									<div class="card-price">
+										<a class="description" href="#">Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;</a>
+										
+										<b class="catalog-item-price">4 900 руб.</b>
+									</div>
 								</li>
 							</ul>			
 						
@@ -233,15 +281,19 @@
 				<p class="paragraph"><a href="#">Тел.: +7 (495) 495-95-95</a></p>
 			</div>
 
-			<div class="footer-bottom">
-			<!--потом добавить желтую CSS-линию сюда-->
-				<ul class="footer-social">
-					<li class="social-btn social-fb"><a href="">Facebook</a></li>
-					<li class="social-btn social-in"><a href="">Instagram</a></li>
-					<li class="social-btn social-tw"><a href="">Twitter</a></li>
-				</ul>			
+			<div class="footer-bottom-container">
+				<div class="footer-bottom">
+					<!--потом добавить желтую CSS-линию сюда-->
 
-				<span class="htmlacademy-logo"><a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML-академия"></a></span>
+					<ul class="footer-social">
+						<li class="social-btn"><a href="#" class="social-fb"><span class="visually-hidden">Facebook</span></a></li>
+						<li class="social-btn"><a href="#" class="social-in"><span class="visually-hidden">Instagram</span></a></li>
+						<li class="social-btn"><a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a></li>
+					</ul>
+					
+					
+					<a href="https://htmlacademy.ru/" target="_blank" class="htmlacademy-logo"><span></span></a>
+				</div>
 			</div>
 		</div>
 	</footer>
