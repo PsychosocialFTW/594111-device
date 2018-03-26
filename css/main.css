@@ -157,8 +157,6 @@ img {
 }
 
 .sub-menu li {
-	padding-left: 57px;
-	/*padding-bottom: 42px;*/
 	box-sizing: border-box;
 }
 
@@ -882,7 +880,7 @@ img {
 }
 
 .header-main-menu {
-	padding-bottom: 164px;
+	padding-bottom: 157px;
 }
 
 .inner-menu {
@@ -892,7 +890,10 @@ img {
 .main-menu ul {
 	margin: 0;
 	padding: 0;
+	padding-top: 23px;
+	padding-left: 57px;
 	display: none;
+	box-sizing: border-box;
 }
 
 .main-menu > li:first-child:hover .sub-menu {
@@ -962,7 +963,7 @@ img {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-basis: 1100px;
+	/*flex-basis: 1100px;*/
 }
 
 .slider-item img {
@@ -1521,7 +1522,6 @@ img {
 
 .catalog-item {
 	width: 360px;
-	margin-right: 10px;
 	margin-bottom: 47px;
 }
 
