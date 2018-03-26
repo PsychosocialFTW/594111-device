@@ -197,7 +197,7 @@ img {
 	flex-basis: 490px;
 	box-sizing: border-box;
 	padding-top: 9px;
-	margin-right: 390px;
+	margin-right: 350px;
 	order: 5;
 }
 
@@ -206,7 +206,7 @@ img {
 	padding-right: 99px;	
 	padding-top: 23px;
 	padding-left: 0;
-	margin-right: 390px;
+	margin-right: 350px;
 	box-sizing: border-box;
 	order: 3;
 }
@@ -254,11 +254,13 @@ img {
 
 .search-btn {
 	border: 2px solid #000;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgb(247, 226, 150);
 	display: none;
 	position: absolute;
-	top: 11px;
-	left: 387px;
+	top: -15px;
+	left: 362px;
+	padding: 15px 19px 13px;
+	box-sizing: border-box;
 }
 
 .search-btn:hover {
@@ -380,7 +382,9 @@ img {
 }
 
 .service-btn:active,
-.active {
+.active,
+.active:hover,
+.active:active {
 	border: none;
 	color: #f7e184;
 	background-color: #000;
@@ -391,6 +395,9 @@ img {
 	padding-right: 115px;
 	box-sizing: border-box;
 }
+
+
+
 
 .services-slider-list li:first-child {
 	margin-bottom: 25px;
@@ -507,10 +514,17 @@ img {
 }
 
 .map-popup {
-	width: 994px; 
+	width: 960px; 
 	height: 559px;
-	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
+	box-shadow: 5px 5px 20px 5px rgba(4, 6, 6, 0.2);
 	position: relative;
+}
+
+.modal-map {
+	position: absolute;
+	top: 1855px;
+	left: 150px;
+	z-index: 1;
 }
 
 .inner-page h2 {
@@ -708,9 +722,17 @@ img {
 .feedback {
 	width: 960px;
 	height: 553px;
-	box-shadow: 10px 10px 20px 0 rgba(4, 6, 6, 0.2);
+	background-color: #fff;
+	box-shadow: 5px 5px 20px 5px rgba(4, 6, 6, 0.2);
 	margin-left: 100px;
 	position: relative;
+	z-index: 1;
+}
+
+.modal-feedback {
+	position: absolute;
+	top: 1057px;
+	left: 50px;
 }
 
 .user-data {
@@ -730,18 +752,21 @@ img {
 
 .feedback-input input {
 	width: 100%;
-	padding: 20px;
+	padding: 15px 20px;
 	box-sizing: border-box;
+	margin-bottom: 15px;
 }
 
 .feedback-area {
-	flex-basis: 720px;
+	flex-basis: 760px;
+	margin-bottom: 35px;
 }
 
 .feedback-area textarea {
 	width: 100%;
 	padding: 17px 20px;
 	min-height: 156px;
+	box-sizing: border-box;
 }
 
 .feedback-input label,
@@ -953,7 +978,9 @@ img {
 }
 
 .slider {
-	padding-bottom: 478px;
+	/*padding-bottom: 478px;*/
+	padding-bottom: 0;
+	top: -110px;
 	position: relative;
 
 	outline: 2px solid red;
@@ -976,9 +1003,9 @@ img {
 }
 
 .slider-item:nth-child(2) {
-	position: absolute;
+	/*position: absolute;
 	top: -115px;
-	left: 0;
+	left: 0;*/
 	/*padding-left: 20px;*/
 	box-sizing: border-box;
 	z-index: 1;
@@ -986,17 +1013,17 @@ img {
 }
 
 .slider-item:nth-child(3) {
-	position: absolute;
+	/*position: absolute;
 	top: -120px;
-	left: 0;
+	left: 0;*/
 	z-index: 2;
 	display: none;		
 }
 
 .slider-item:last-child {
-	position: absolute;
+	/*position: absolute;
 	top: -150px;
-	left: 0;
+	left: 0;*/
 	z-index: 1;
 	display: none;
 }
@@ -1213,7 +1240,7 @@ img {
 .footer-top ul {
 	margin: 0;
 	padding: 0;
-
+	justify-content: flex-end;
 }
 
 .footer-login-main,
@@ -1225,21 +1252,21 @@ img {
 .footer-login-main li:first-child {
 	margin-right: 44px;
 	position: relative;
-	flex-basis: 69px;
+	/*flex-basis: 69px;*/
 	padding-left: 27px;
 }
 
 .footer-login-main li:nth-child(2) {
 	margin-right: 41px;
 	position: relative;
-	flex-basis: 89px;
+	/*flex-basis: 89px;*/
 	padding-left: 20px;
 }
 
 .footer-login-main li:last-child {
 	margin-right: 0;
 	position: relative;
-	flex-basis: 82px;
+	/*flex-basis: 82px;*/
 	padding-left: 24px;
 }
 
@@ -1478,6 +1505,8 @@ img {
 
 .ascending-descendingly {
 	flex-basis: 60px;
+
+	position: relative;
 }
 
 .ascending-descendingly li {
@@ -2143,35 +2172,32 @@ img {
 	background-position: 0 0;
 }
 
-/*Кнопки сортировки*/
-.up-sort {
-	position: relative;
-}
-
-.up-sort::before {
+.up-sort{
 	content: "";
 	position: absolute;
 	width: 10px;
 	height: 11px;
-	top: -8px;
+	top: -7px;
 	left: 19px;
+	font-size: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
 	background-image: url("../img/icon-up-dir.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.2;
 }
 
-.down-sort {
-	position: relative;
-}
-
-.down-sort::before {
+.down-sort{
 	content: "";
 	position: absolute;
 	width: 10px;
 	height: 11px;
-	top: -8px;
-	left: 33px;
+	top: -7px;
+	right: 0;
+	font-size: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
 	background-image: url("../img/icon-down-dir.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -2228,7 +2254,7 @@ img {
 
 /*Кнопки при наведении на карточку товара*/
 
-.catalog-item {
+.hover-img {
 	position: relative;
 }
 
@@ -2244,10 +2270,16 @@ img {
 	background-color: rgba(238, 238, 238, 0.7);
 	cursor: pointer;
 	display: none;
+	/*width: 100%;
+	min-height: 90%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;*/
 }
 
 .catalog-item-hover .btn {
 	width: 200px;
+	/*flex-basis: 100%;*/
 	padding-left: 36px;
 	padding-right: 40px;
 	box-sizing: border-box;
@@ -2262,8 +2294,8 @@ img {
 	letter-spacing: 0;
 }
 
-.catalog-item img:hover + .hover-btn {
-	display: block;
+.hover-img:hover .hover-btn {
+	display: flex;
 }
 
 /*Стилизация checkbox у фильтра по цвету*/
@@ -2436,46 +2468,52 @@ img {
 
 /*Кнопка закрытия у блока "Напишите нам"*/
 
-.feedback-close-btn::after {
+.feedback-close-btn {
 	content: "";
 	position: absolute;
 	width: 55px;
 	height: 55px;
 	top: 22px;
 	right: 22px;
+	font-size: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
 	background-image: url("../img/modal-close.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.5;
 }
 
-.feedback-close-btn:hover::after {
+.feedback-close-btn:hover {
 	opacity: 1;
 }
 
-.feedback-close-btn:active::after {
+.feedback-close-btn:active {
 	opacity: 0.3;
 }
 
 /*Кнопка закрытия у интерактивной карты*/
 
-.map-close-btn::after {
+.map-close-btn {
 	content: "";
 	position: absolute;
 	width: 55px;
 	height: 55px;
 	top: 22px;
 	right: 22px;
+	font-size: 0;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0);
 	background-image: url("../img/modal-close.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.5;
 }
 
-.map-close-btn:hover::after {
+.map-close-btn:hover {
 	opacity: 1;
 }
 
-.map-close-btn:active::after {
+.map-close-btn:active {
 	opacity: 0.3;
 }
