@@ -93,7 +93,15 @@
 							<form action="https://echo.htmlacademy.ru" method="get" class="filter-options">
 								<fieldset class="filter-price">
 									<legend>Стоимость</legend>
-									<p>от 0 <input type="range" id="price" min="0" max="5000">до 5000</p>
+									<div class="price-bar">
+										<div class="full-bar">
+											<div class="choosen-bar"></div>
+										</div>
+										<div class="bar-radio-min"></div>
+										<div class="bar-radio-max"></div>
+									</div>
+									<span class="price-value">от 0</span>
+									<span class="price-value">до 5000</span>
 								</fieldset>
 								<fieldset class="filter-color">
 									<legend>Цвет</legend>						
@@ -225,7 +233,7 @@
 									</div>
 								</li>
 
-								<li class="catalog-item">				<div class="hover-img">		
+								<li class="catalog-item">				<div class="hover-img card-new">		
 										<img src="img/item-4.jpg" alt="Селфи-палка &lt;&lt;Следуй за мной&gt;&gt;" width="360" height="380">
 										
 										<div class="hover-btn">
@@ -261,7 +269,7 @@
 		</section>	
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer inner-footer">
 		<div class="container">
 			<div class="footer-top">
 				<a class="footer-logo" href="index.html">Device</a>
