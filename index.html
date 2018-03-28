@@ -8,9 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<input type="radio" name="main-slider" id="main-slider-1" class="hidden-radio" checked>
-	<input type="radio" name="main-slider" id="main-slider-2" class="hidden-radio">
-	<input type="radio" name="main-slider" id="main-slider-3" class="hidden-radio">
+	
 	<div class="container">
 		<header class="header-top">		
 			<h1 class="header-logo">
@@ -49,18 +47,20 @@
 	<main>
 		<!--js-slider begin-->
 		<div class="container">
-			<section class="slider">
+			<input type="radio" name="main-slider" id="main-slider-1" class="hidden-radio" checked>
+			<input type="radio" name="main-slider" id="main-slider-2" class="hidden-radio">
+			<input type="radio" name="main-slider" id="main-slider-3" class="hidden-radio">
+			<section class="slider">				
 				<h2 class="visually-hidden">Девайсы</h2>
 				<div class="slider-switch">
 					<label for="main-slider-1" class="slider-switch-item slider-switch-1"></label>
 					<label for="main-slider-2" class="slider-switch-item slider-switch-2"></label>
 					<label for="main-slider-3" class="slider-switch-item slider-switch-3"></label>
 				</div>
-				<div class="test">
 				<section class="slider-item">
 					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long_stick">
 
-					<div class="slider-item-description">					
+					<div class="slider-item-description slide1">				
 						<h2>Делай селфи,<br> как Бен Стиллер!</h2>
 						<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<a href="#">Подробнее</a>
@@ -79,14 +79,11 @@
 						</table>					
 					</div>
 				</section>
-				</div>
-
-				<div class="test">
 				<section class="slider-item">
 					<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="fitness-bracelet">
 					
-					<div class="slider-item-description">
-						<h2>Худеем правильно!</h2>
+					<div class="slider-item-description slide2">
+						<h2>Худеем <br> правильно!</h2>
 						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 						<a href="#">Подробнее</a>
 					
@@ -100,20 +97,17 @@
 						</table>
 					</div>
 				</section>
-				</div>
-
-				<div class="test">
 				<section class="slider-item">
 					<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334" class="quadrupter">
 
-					<div class="slider-item-description">
+					<div class="slider-item-description slide3">
 							<h2>Порхает как бабочка, жалит как пчела!</h2>
-							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
 							<a href="#">Подробнее</a>
 						
 							<table class="product">
 								<tr>
-									<td class="product-properties">800 м</td>
+									<td class="product-properties ">800 м</td>
 									<td class="product-properties">50 м</td>
 								</tr>
 								<tr>
@@ -123,7 +117,6 @@
 							</table>
 					</div>
 				</section>
-				</div>
 			</section>
 		</div>
 		<!--js-slider end-->
