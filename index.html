@@ -280,30 +280,32 @@
 	</footer>
 
 	<!--js-write-us begin-->
-	<div class="feedback modal-feedback">
-		<form action="https://echo.htmlacademy.ru" method="post" class="user-data">
-			<p class="feedback-input">
-				<label for="fullname">Ваше имя:</label>
-				<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
-			</p>
-			<p class="feedback-input">
-				<label for="email">Ваш e-mail:</label>
-				<input type="email" name="email" id="email" placeholder="email@example.com">
-			</p>
-			<p class="feedback-area">
-				<label for="message">Текст письма:</label>
-				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-			</p>
+	<div class="container">
+		<div class="feedback modal-feedback">
+			<form action="https://echo.htmlacademy.ru" method="post" class="user-data">
+				<p class="feedback-input">
+					<label for="fullname">Ваше имя:</label>
+					<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+				</p>
+				<p class="feedback-input">
+					<label for="email">Ваш e-mail:</label>
+					<input type="email" name="email" id="email" placeholder="email@example.com">
+				</p>
+				<p class="feedback-area">
+					<label for="message">Текст письма:</label>
+					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+				</p>
 
-			<button class="btn feedback-btn" value="send">Отправить</button>
-		</form>	
-		<button class="feedback-close-btn"><span class="visually-hidden">Закрыть</span></button>	
+				<button class="feedback-btn" value="send">Отправить</button>
+			</form>	
+			<button class="feedback-close-btn" type="submit"><span class="visually-hidden">Закрыть</span></button>	
+		</div>
 	</div>
 	<!--js-write-us end-->
 	
 	<!--js-map-popup begin-->
 	<div class="map-popup modal-map">
-		<img src="img/map-big.jpg" width="994" height="559" alt="г. Москва, улица Строителей, 15">
+		<img src="img/map-big.jpg" width="994" height="559" alt="г. Москва, улица Строителей, 15" class="static-map">
 		<button class="map-close-btn"><span class="visually-hidden">Закрыть</span></button>
 	</div>
 	<!--js-map-popup end-->
