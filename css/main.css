@@ -928,7 +928,7 @@ img {
 .feedback-btn {
 	-ms-flex-preferred-size: 200px;
 	    flex-basis: 200px;
-	padding: 10px 35px 10px 36px;
+	padding: 0 35px 20px 36px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
@@ -2991,4 +2991,10 @@ img {
 	margin-left: 59px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+/*js*/
+
+.feedback-show {
+	display: flex;
 }
