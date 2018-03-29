@@ -30,11 +30,11 @@
 					<li><a href="#">Каталог товаров</a>
 						<ul class="sub-menu">
 							<li><a href="#">Виртуальная реальность</a></li>
-							<li><a href="catalog.html">Моноподы для селфи</a></li>
-							<li><a href="#">Экшн-камеры</a></li>
 							<li><a href="#">Фитнес-браслеты</a></li>
-							<li><a href="#">Умные часы</a></li>
 							<li><a href="#">Квадрокоптеры</a></li>
+							<li><a href="catalog.html">Моноподы для селфи</a></li>			
+							<li><a href="#">Умные часы</a></li>
+							<li><a href="#">Экшн-камеры</a></li>
 						</ul>
 					</li>
 					<li class="#"><a href="#">Доставка</a></li>
@@ -228,7 +228,9 @@
 				<section class="contacts">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<img src="img/map.jpg" alt="г. Москва, улица Строителей, 15" width="560" height="222">
+					<a href="https://goo.gl/maps/xV8mmEjBzAR2" target="_blank" class="static-map">		
+						<img src="img/map.jpg" alt="г. Москва, улица Строителей, 15" width="560" height="222">
+					</a>
 					<a href="#" class="js-write-us">Напишите нам</a>
 				</section>
 			</div>
@@ -280,36 +282,36 @@
 	</footer>
 
 	<!--js-write-us begin-->
-	<div class="container">
-		<div class="feedback modal-feedback">
-			<form action="https://echo.htmlacademy.ru" method="post" class="user-data">
-				<p class="feedback-input">
-					<label for="fullname">Ваше имя:</label>
-					<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
-				</p>
-				<p class="feedback-input">
-					<label for="email">Ваш e-mail:</label>
-					<input type="email" name="email" id="email" placeholder="email@example.com">
-				</p>
-				<p class="feedback-area">
-					<label for="message">Текст письма:</label>
-					<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-				</p>
+	
+	<div class="feedback modal-feedback">
+		<form action="https://echo.htmlacademy.ru" method="post" class="user-data">
+			<p class="feedback-input">
+				<label for="fullname">Ваше имя:</label>
+				<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+			</p>
+			<p class="feedback-input">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com">
+			</p>
+			<p class="feedback-area">
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+			</p>
 
-				<button class="feedback-btn" value="send">Отправить</button>
-			</form>	
-			<button class="feedback-close-btn" type="submit"><span class="visually-hidden">Закрыть</span></button>	
-		</div>
+			<button class="feedback-btn" value="send">Отправить</button>
+		</form>	
+		<button class="feedback-close-btn" type="submit"><span class="visually-hidden">Закрыть</span></button>	
 	</div>
 	<!--js-write-us end-->
 	
 	<!--js-map-popup begin-->
 	<div class="map-popup modal-map">
-		<img src="img/map-big.jpg" width="994" height="559" alt="г. Москва, улица Строителей, 15" class="static-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.9968814143795!2d37.52693626375239!3d55.68756055853307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522350191437" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<button class="map-close-btn"><span class="visually-hidden">Закрыть</span></button>
 	</div>
 	<!--js-map-popup end-->
 
 	<script src="js/popup.js"></script>
+	<script src="js/modal-map.js"></script>
 </body>
 </html>
