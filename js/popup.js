@@ -22,7 +22,10 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
 	if (!fullname.value || !mail.value || !info.value) {
 		evt.preventDefault();
+		writeus.classList.remove("feedback-error");
+		writeus.offsetWidth = writeus.offsetWidth;
 		writeus.classList.add("feedback-error");
+
 	}
 });
 
