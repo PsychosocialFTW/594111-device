@@ -25,7 +25,6 @@ form.addEventListener("submit", function(evt) {
 		writeus.classList.remove("feedback-error");
 		writeus.offsetWidth = writeus.offsetWidth;
 		writeus.classList.add("feedback-error");
-
 	}
 });
 

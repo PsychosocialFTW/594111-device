@@ -14,7 +14,8 @@
 			<h1 class="header-logo">
 				<a>Device</a>
 			</h1>
-			<section class="header-top-navigation">		
+			<section class="header-top-navigation">
+				<h2 class="visually-hidden">Меню</h2>		
 				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
 					<input type="search" name="search" placeholder="Поиск по сайту" class="search-icon">
 					<button class="search-btn" type="submit">Найти</button>
@@ -58,7 +59,7 @@
 					<label for="main-slider-3" class="slider-switch-item slider-switch-3"></label>
 				</div>
 				<section class="slider-item">
-					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long_stick">
+					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long-stick">
 
 					<div class="slider-item-description slide1">				
 						<h2>Делай селфи,<br> как Бен Стиллер!</h2>
@@ -67,9 +68,9 @@
 							
 						<table class="product">
 							<tr>
-								<td class="product-properties">8,5 м</td>
-								<td class="product-properties">5 кг</td>
-								<td class="product-properties">Карбон</td>
+								<td class="product-properties stick-properties">8,5 м</td>
+								<td class="product-properties stick-properties">5 кг</td>
+								<td class="product-properties stick-properties">Карбон</td>
 							</tr>
 							<tr>
 								<td class="product-description">Длина палки</td>
@@ -84,15 +85,15 @@
 					
 					<div class="slider-item-description slide2">
 						<h2>Худеем <br> правильно!</h2>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
 						<a href="#">Подробнее</a>
 					
 						<table class="product">
 							<tr>
-								<td class="product-properties">48 часов</td>
+								<td class="product-properties bracelet-properties">48 часов</td>
 							</tr>
 							<tr>
-								<td class="product-descriptoin">Без подзарядки</td>
+								<td class="product-description bracelet-properties">Без подзарядки</td>
 							</tr>
 						</table>
 					</div>
@@ -107,12 +108,12 @@
 						
 							<table class="product">
 								<tr>
-									<td class="product-properties ">800 м</td>
-									<td class="product-properties">50 м</td>
+									<td class="product-properties quadrupter-properties">800 м</td>
+									<td class="product-properties quadrupter-properties">50 м</td>
 								</tr>
 								<tr>
-									<td class="product-descriptoin">Дальность полета</td>
-									<td class="product-descriptoin">Радиус поражения</td>
+									<td class="product-description">Дальность полета</td>
+									<td class="product-description">Радиус поражения</td>
 								</tr>
 							</table>
 					</div>
@@ -173,13 +174,13 @@
 				<div class="slider-middle">
 					<div class="slider-services">
 						<ul class="services-slider-list">
-							<li><button class="btn service-btn active" id="js-delivery">Доставка</button></li>
-							<li><button class="btn service-btn" id="js-guarantee">Гарантия</button></li>
-							<li><button class="btn service-btn" id="js-credit">Кредит</button></li>
+							<li><button class="btn service-btn js-delivery-btn active">Доставка</button></li>
+							<li><button class="btn service-btn js-guarantee-btn">Гарантия</button></li>
+							<li><button class="btn service-btn js-credit-btn">Кредит</button></li>
 						</ul>			
 					</div>		
 					<div class="slider-item-services">
-						<section class="services-slider-item delivery-slide">
+						<section class="services-slider-item delivery-slide js-show-slide">
 							<h2>Доставка</h2>
 							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 						</section>
@@ -275,7 +276,7 @@
 					</ul>
 					
 					
-					<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="htmlacademy-logo"><span></span></a>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="htmlacademy-logo"></a>
 				</div>
 			</div>
 		</div>
@@ -306,12 +307,13 @@
 	
 	<!--js-map-popup begin-->
 	<div class="map-popup modal-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.9968814143795!2d37.52693626375239!3d55.68756055853307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522350191437" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.9968814143795!2d37.52693626375239!3d55.68756055853307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522350191437" width="960" height="559" style="border:0" allowfullscreen></iframe>
 		<button class="map-close-btn"><span class="visually-hidden">Закрыть</span></button>
 	</div>
 	<!--js-map-popup end-->
 
 	<script src="js/popup.js"></script>
 	<script src="js/modal-map.js"></script>
+	<script src="js/slider.js"></script>
 </body>
 </html>
