@@ -2537,27 +2537,27 @@ img {
 	margin-right: 0;
 }
 
-#main-slider-1:checked ~ .slider .slider-item:nth-child(3) {
+.main-slider-1:checked ~ .slider .slider-item:nth-child(3) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-#main-slider-2:checked ~ .slider .slider-item:nth-child(4) {
+.main-slider-2:checked ~ .slider .slider-item:nth-child(4) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-#main-slider-3:checked ~ .slider .slider-item:nth-child(5) {
+.main-slider-3:checked ~ .slider .slider-item:nth-child(5) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-#main-slider-1:checked ~ .slider .slider-switch .slider-switch-1::after,
-#main-slider-2:checked ~ .slider .slider-switch .slider-switch-2::after,
-#main-slider-3:checked ~ .slider .slider-switch .slider-switch-3::after {
+.main-slider-1:checked ~ .slider .slider-switch .slider-switch-1::after,
+.main-slider-2:checked ~ .slider .slider-switch .slider-switch-2::after,
+.main-slider-3:checked ~ .slider .slider-switch .slider-switch-3::after {
 	content: "";
 	position: absolute;
 	top: 2px;
