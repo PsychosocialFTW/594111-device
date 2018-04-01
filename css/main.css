@@ -1460,7 +1460,7 @@ img {
 	position: relative;
 }
 
-.delivery-slide {
+/*.delivery-slide {
 	position: absolute;
 	display: none;
 }
@@ -1473,7 +1473,7 @@ img {
 .credit-slide {
 	position: absolute;
 	display: none;
-}
+}*/
 
 .container {
 	width: 1200px;
@@ -2291,6 +2291,7 @@ img {
 
 .services-slider-item {
 	position: relative;
+	display: none;
 }
 
 .services-slider-item:first-child::after {
