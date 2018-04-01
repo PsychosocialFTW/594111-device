@@ -5,7 +5,7 @@
 	<title>HTML Academy: Девайс</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main_min.css">
 </head>
 <body>
 	
@@ -48,9 +48,9 @@
 	<main>
 		<!--js-slider begin-->
 		<div class="container">
-			<input type="radio" name="main-slider main-slider-1" id="main-slider-1" class="hidden-radio" checked>
-			<input type="radio" name="main-slider main-slider-2" id="main-slider-2" class="hidden-radio">
-			<input type="radio" name="main-slider main-slider-3" id="main-slider-3" class="hidden-radio">
+			<input type="radio" name="main-slider" id="main-slider-1" class="hidden-radio main-slider-1" checked>
+			<input type="radio" name="main-slider" id="main-slider-2" class="hidden-radio main-slider-2">
+			<input type="radio" name="main-slider" id="main-slider-3" class="hidden-radio main-slider-3">
 			<section class="slider">				
 				<h2 class="visually-hidden">Девайсы</h2>
 				<div class="slider-switch">
@@ -59,9 +59,12 @@
 					<label for="main-slider-3" class="slider-switch-item slider-switch-3"></label>
 				</div>
 				<section class="slider-item">
-					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long-stick">
+					<div class="slide1-img">
+						<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long-stick">
+					</div>
 
-					<div class="slider-item-description slide1">				
+					<div class="slide1-content slide1">
+					<div class="slider-item-description">				
 						<h2>Делай селфи,<br> как Бен Стиллер!</h2>
 						<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<a href="#">Подробнее</a>
@@ -79,23 +82,28 @@
 							</tr>
 						</table>					
 					</div>
+					</div>
 				</section>
 				<section class="slider-item">
-					<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="fitness-bracelet">
-					
-					<div class="slider-item-description slide2">
-						<h2>Худеем <br> правильно!</h2>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
-						<a href="#">Подробнее</a>
-					
-						<table class="product">
-							<tr>
-								<td class="product-properties bracelet-properties">48 часов</td>
-							</tr>
-							<tr>
-								<td class="product-description bracelet-properties">Без подзарядки</td>
-							</tr>
-						</table>
+					<div class="slide2-img">
+						<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="fitness-bracelet">
+					</div>
+
+					<div class="slide2-content slide2">
+						<div class="slider-item-description">
+							<h2>Худеем <br> правильно!</h2>
+							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+							<a href="#">Подробнее</a>
+						
+							<table class="product">
+								<tr>
+									<td class="product-properties bracelet-properties">48 часов</td>
+								</tr>
+								<tr>
+									<td class="product-description bracelet-properties">Без подзарядки</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</section>
 				<section class="slider-item">
@@ -103,7 +111,8 @@
 						<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334" class="quadrupter">
 					</div>
 
-					<div class="slider-item-description slide3">
+					<div class="slide3-content slide3">
+					<div class="slider-item-description">
 							<h2>Порхает как бабочка, жалит как пчела!</h2>
 							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
 							<a href="#">Подробнее</a>
@@ -118,6 +127,7 @@
 									<td class="product-description">Радиус поражения</td>
 								</tr>
 							</table>
+					</div>
 					</div>
 				</section>
 			</section>
