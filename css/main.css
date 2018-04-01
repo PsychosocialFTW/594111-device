@@ -147,6 +147,7 @@ img {
 
 .search-form input:focus + .search-btn {
 	display: inline-block;	
+	vertical-align: top;
 }
 
 .header-top a:hover,
@@ -285,6 +286,7 @@ img {
 	background-color: #000;
 	color: #fff;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .search-btn:active {
@@ -572,10 +574,6 @@ img {
 	background-color: #464646;
 }
 
-/*.inner-footer {
-	padding-top: 58px;
-}*/
-
 .footer-logo {
 	font-family: 'Gilroy', Arial, sans-serif;
 	font-weight: bold;
@@ -810,9 +808,6 @@ img {
 }
 
 .catalog-item-price {
-	/*-ms-flex-preferred-size: 80px;
-	    flex-basis: 80px;*/
-	/*padding-left: 16px;*/
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
@@ -1078,7 +1073,6 @@ img {
 	    -ms-flex-pack: justify;
 	        justify-content: flex-start;
 	letter-spacing: 0;
-	/*flex-wrap: wrap;*/
 }
 
 .header-login-inner li:first-child {
@@ -1185,7 +1179,6 @@ img {
 	    flex-basis: 100%;
 	position: relative;
 	letter-spacing: 4px;
-	/*flex-wrap: wrap;*/
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
@@ -1298,8 +1291,6 @@ img {
 }
 
 .slider-item-description {
-	-ms-flex-preferred-size: 480px;
-	    flex-basis: 480px;
 	padding-top: 81px;
 	margin-left: 129px;
 	-webkit-box-sizing: border-box;
@@ -1395,6 +1386,10 @@ img {
 	margin-top: 40px;
 }
 
+.slide3-img {
+	width: 540px;
+}
+
 .popular-items {
 	margin: 0;
 	padding: 0;
@@ -1459,21 +1454,6 @@ img {
 	padding-right: 35px;
 	position: relative;
 }
-
-/*.delivery-slide {
-	position: absolute;
-	display: none;
-}
-
-.guarantee-slide {
-	position: absolute;
-	display: none;
-}
-
-.credit-slide {
-	position: absolute;
-	display: none;
-}*/
 
 .container {
 	width: 1200px;
@@ -1629,7 +1609,6 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	width: 480px;
-	/*flex-wrap: wrap;*/
 }
 
 .footer-login-main li:first-child {
@@ -2311,7 +2290,7 @@ img {
 	width: 172px;
 	height: 196px;
 	position: absolute;
-	top: -14px;
+	top: 60px;
 	left: 543px;
 	background-image: url("../img/warranty.svg");
 	background-repeat: no-repeat;
@@ -2323,7 +2302,7 @@ img {
 	width: 156px;
 	height: 188px;
 	position: absolute;
-	top: -13px;
+	top: 60px;
 	left: 535px;
 	background-image: url("../img/credit.svg");
 	background-repeat: no-repeat;
@@ -2433,7 +2412,6 @@ img {
 	top: 0;
 	right: 0;
 	background-image: url("../img/logo-html.svg");
-	/*background-repeat: no-repeat;*/
 	background-position: 0 0;
 }
 
@@ -2544,6 +2522,7 @@ img {
 .slider-switch label {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	width: 12px;
 	height: 12px;
 	margin-right: 20px;
@@ -3236,4 +3215,3 @@ img {
 
 .js-show-slide {
 	display: block;
-}
