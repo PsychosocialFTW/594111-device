@@ -624,6 +624,9 @@ img {
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	z-index: 30;
+	background-image: url("../img/map-big.jpg");
+	background-repeat: none;
+	background-position: 0 0;
 }
 
 .inner-page h2 {
@@ -1578,7 +1581,7 @@ img {
 	width: 260px;
 	padding-left: 23px;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 }
 
 .contacts .js-write-us {
@@ -1598,6 +1601,7 @@ img {
 	min-height: 222px;
 	margin-top: 10px;
 	margin-bottom: 60px;
+	cursor: pointer;
 }
 
 .static-map::before {
