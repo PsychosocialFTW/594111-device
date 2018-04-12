@@ -1249,14 +1249,14 @@ img {
 	position: relative;
 }
 
-.slider-item {
+/*.slider-item {
 	margin: 0;
 	padding: 0;
 	display: none;
 	min-height: 510px;
-}
+}*/
 
-.slide1-img {
+/*.slide1-img {
 	width: 400px;
 	margin-left: 70px;
 }
@@ -1268,13 +1268,13 @@ img {
 
 .slide3-img {
 	width: 540px;
-}
+}*/
 
-.long-stick {
+/*.long-stick {
 	width: 384px;
 	height: 486px;
 	padding-left: 20px;
-}
+}*/
 
 .fitness-bracelet {
 	width: 345px;
@@ -1297,7 +1297,7 @@ img {
 	margin-top: 65px;
 }
 
-.slide1-content {
+/*.slide1-content {
 	width: 500px;
 	padding-top: 81px;
 	margin-left: 129px;
@@ -1319,7 +1319,7 @@ img {
 	margin-left: 129px;
 	position: relative;
 	z-index: 1;
-}
+}*/
 
 .slide1::before,
 .slide2::before,
@@ -2520,7 +2520,7 @@ img {
 			box-sizing: border-box;
 }
 
-.slider-switch label {
+/*.slider-switch label {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -2536,9 +2536,9 @@ img {
 
 .slider-switch label:last-child {
 	margin-right: 0;
-}
+}*/
 
-.main-slider-1:checked ~ .slider .slider-item:nth-child(3) {
+/*.main-slider-1:checked ~ .slider .slider-item:nth-child(3) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2568,7 +2568,7 @@ img {
 	height: 2px;
 	border: 2px solid #000;
 	border-radius: 50%;
-}
+}*/
 
 /*Декоративные элементы catalog*/
 
@@ -3212,4 +3212,99 @@ img {
 
 .js-show-slide {
 	display: block;
+}
+
+/*BEM praqctice*/
+
+.content__slider-1:checked ~ .slider .slider-item:nth-child(3) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.content__slider-2:checked ~ .slider .slider-item:nth-child(4) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.content__slider-3:checked ~ .slider .slider-item:nth-child(5) {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.content__slider-1:checked ~ .slider .slider-switch .slider-switch__item-1::after,
+.content__slider-2:checked ~ .slider .slider-switch .slider-switch__item-2::after,
+.content__slider-3:checked ~ .slider .slider-switch .slider-switch__item-3::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 10;
+	width: 2px;
+	height: 2px;
+	border: 2px solid #000;
+	border-radius: 50%;
+}
+
+.content__container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.slider-switch__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	margin-right: 20px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.slider-switch__item:last-child {
+	margin-right: 0;
+}
+
+.slider__item {
+	margin: 0;
+	padding: 0;
+	display: none;
+	min-height: 510px;
+}
+
+.slide__first-image {
+	width: 400px;
+	margin-left: 70px;
+}
+
+.slide2__second-image {
+	width: 400px;
+	margin-left: 70px;
+}
+
+.slide3__third-image {
+	width: 540px;
+}
+
+.first-image__long-stick {
+	width: 384px;
+	height: 486px;
+	padding-left: 20px;
+}
+
+.slide-content {
+	width: 500px;
+	padding-top: 81px;
+	margin-left: 129px;
+	position: relative;
+	z-index: 1;
 }
